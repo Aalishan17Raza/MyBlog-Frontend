@@ -8,7 +8,7 @@ export default function PostPage() {
     const { userInfo } = useContext(UserContext);
     const { id } = useParams();
     useEffect(() => {
-        fetch(`https://myblog-api.onrender.com/post/${id}`)
+        fetch(`https://myblog-api-lefl.onrender.com/post/${id}`)
             .then(res => {
                 res.json().then(postinfo => {
                     setPostInfo(postinfo)
@@ -34,7 +34,7 @@ export default function PostPage() {
                 </div>
             )}
             <div className="image">
-                <img src={`https://myblog-api.onrender.com/${postInfo.cover}`} alt="" />
+                <img src={`https://myblog-api-lefl.onrender.com/${postInfo.cover}`} alt="" />
             </div>
             <div className="content" dangerouslySetInnerHTML={{ __html: postInfo.content }} />
         </div>

@@ -10,7 +10,7 @@ export default function LoginPage() {
     async function login(e) {
         e.preventDefault();
         try {
-            const response = await fetch('https://myblog-api.onrender.com/login', {
+            const response = await fetch('https://myblog-api-lefl.onrender.com/login', {
                 method: 'POST',
                 body: JSON.stringify({ username, password }),
                 headers: { 'Content-Type': 'application/json' },

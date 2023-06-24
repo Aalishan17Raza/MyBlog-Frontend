@@ -8,7 +8,7 @@ export default function Header() {
     const username = userInfo?.username;
     useEffect(() => {
         try {
-            fetch('https://myblog-api.onrender.com/profile', {
+            fetch('https://myblog-api-lefl.onrender.com/profile', {
                 credentials: 'include'
             }).then(response => {
                 response.json().then(userInfo => {
@@ -24,7 +24,7 @@ export default function Header() {
 
 
     function logout() {
-        fetch('https://myblog-api.onrender.com/logout', {
+        fetch('https://myblog-api-lefl.onrender.com/logout', {
             credentials: 'include',
             method: 'POST',
         })

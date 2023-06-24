@@ -34,7 +34,7 @@ export default function CreatePost() {
         data.set('content', content);
         data.set('file', files[0]);
 
-        const response = await fetch('https://myblog-api.onrender.com/post', {
+        const response = await fetch('https://myblog-api-lefl.onrender.com/post', {
             method: 'POST',
             body: data,
             credentials: "include"
